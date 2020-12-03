@@ -24,6 +24,8 @@ class UserManager(models.Manager):
             errors['phone_digit'] = "Phone number can only consist of numbers."
         if len(postData['zipcode']) < 5:
             errors['city'] = "Zip code needs to be at least 5 characters."
+        if postData['zipcode'].isdigit() == False:
+            errors['city_alpha'] = "Phone number can only consist of numbers."
         if len(postData['password']) < 8:
             errors['password'] = "Password needs to be at least 8 characters."
         if postData['password'] != postData['confirm_password']:

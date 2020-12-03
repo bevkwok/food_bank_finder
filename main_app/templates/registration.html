@@ -50,12 +50,10 @@
                     <form class="form-signin" action="/register" method="POST">
                         {% csrf_token %}
                         <div class="form-label-group">
-                            
                             <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name" required autofocus>
                             <label for="inputUserame">First Name</label>
                         </div>
                         <div class="form-label-group">
-                            
                             <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name" required>
                             <label for="inputUserame">Last Name</label>
                         </div>
@@ -68,11 +66,10 @@
                             <label for="inputPhone">Phone Number</label>
                         </div>
                         <div class="form-label-group">
-                            <input type="text" name="zipcode" id="inputZipCode" class="form-control" placeholder="Zip Code" required autofocus>
+                            <input type="text" name="zipcode" id="inputZipCode" class="form-control" placeholder="Zip Code" required>
                             <label for="inputZipCode">Zip Code</label>
                         </div>
                         <hr>
-    
                         <div class="form-label-group">
                             <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
                             <label for="inputPassword">Password</label>
